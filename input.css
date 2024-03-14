@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
+.webImage {
+  /* @apply w-1/3  how to write 50% height in tailwind  */
+  @apply flex;
+}
+body {
+  @apply bg-[#1a1a1a] text-white;
+}
+label[for="burger-menu"] {
+  @apply hidden;
+  /* width: 2em; */
+  /* height: 2em; */
+}
+.nav-lists li {
+  @apply whitespace-nowrap inline p-[1em];
+}
+.nav {
+  @apply flex justify-between ml-[1em] m-[2em];
+}
+.nav a {
+  @apply text-white no-underline p-[1em] hover:bg-[#333];
+}
+/* .nav-lists li {
+  list-style: none;
+} i want to convert this code inot tailwlind  */
+
+.nav-lists li {
+  @apply list-none;
+}
+
+.main-content {
+  @apply flex justify-center items-center h-[80vh] w-4/5 m-auto;
+}
+.mainFooter {
+  @apply text-center text-xs;
+}
+.grid-container {
+  @apply overflow-visible;
+}
+MainSideText {
+  @apply w-1/5;
+}
+.bolding {
+  @apply font-bold;
+}
+.MainSideTextPara {
+  @apply text-[1.8em];
+}
+#MainContAnimation {
+  @apply w-[145%];
+}
+/* create media query for desktop screen of 1200px */
+@media (max-width: 1200px) {
+  .webImage {
+    @apply flex items-center;
+  }
+  .first {
+    @apply w-3/12;
+  }
+  .second {
+    @apply w-3/12;
+  }
+}
+/* write me media query which should work between 1200 and 960 */
+@media (max-width: 960px) {
+  .webImage {
+    @apply flex items-center;
+  }
+  .first {
+    @apply w-[30%];
+  }
+  .second {
+    @apply w-[30%];
+  }
+  .MainSideTextPara {
+    @apply text-[1em];
+  }
+}
+/* now write me media query for mobile screens  */
+@media (max-width: 768px) {
+  .webImage {
+    @apply flex items-center;
+  }
+  .first {
+    @apply w-2/5;
+  }
+  .second {
+    @apply w-2/5;
+  }
+  .MainSideTextPara {
+    @apply text-[0.8em] text-[2em];
+  }
+  .main-content {
+    @apply flex-col;
+  }
+  .MainSideText {
+    /* how to write     font-size: 0.6rem; in taiwind  */
+
+    @apply w-4/5 text-[0.6rem];
+  }
+  #MainContAnimation {
+    @apply w-4/5;
+  }
+  /* Hide the navigation list by default */
+  .nav-lists {
+    @apply hidden;
+  }
+  /* Show the navigation list when the burger menu is clicked */
+  label[for="burger-menu"] {
+    @apply text-[4em] block;
+    /* width: 2em; */
+    /* height: 2em; */
+  }
+  label[for="burger-menu"] {
+    /* width: 2em; */
+    /* height: 2em; */
+  }
+}
+@media (max-width: 480px) {
+  .webImage {
+    @apply flex items-center;
+  }
+  .first {
+    @apply w-2/5;
+  }
+  .second {
+    @apply w-2/5;
+  }
+  .MainSideTextPara {
+    @apply text-[0.8em] text-[2em];
+  }
+  .main-content {
+    @apply flex-col;
+  }
+  .MainSideText {
+    @apply w-4/5;
+  }
+  #MainContAnimation {
+    @apply w-4/5;
+  }
+  /* Hide the navigation list by default */
+  .nav-lists {
+    @apply hidden;
+  }
+  /* Show the navigation list when the burger menu is clicked */
+  label[for="burger-menu"] {
+    @apply text-[4em] block;
+    /* width: 2em; */
+    /* height: 2em; */
+  }
+  label[for="burger-menu"] {
+    /* width: 2em; */
+    /* height: 2em; */
+  }
+}

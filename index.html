@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="grid-container">
+    <style>
+      #nav-lists-mb {
+        width: 100vw;
+        background: #a90d1d;
+        height: 100vh;
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+    </style>
+    <ul class="nav-lists" id="nav-lists-mb">
+      <!-- Your navigation list items -->
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="services.html">Services</a></li>
+    </ul>
+    <div class="main" style="display: none">
+      <div class="nav">
+        <div class="webImage">
+          <img class="first" src="img/vector@2x.png" alt="" />
+          <img class="second" src="img/group@2x.png" alt="" />
+        </div>
+        <!-- <ul class="nav-lists">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="services.html">Services</a></li>
+        </ul> -->
+        <!-- <input type="checkbox" class="burger-menu" id="burger-menu"> -->
+        <label class="burget-menu" for="burger-menu">&#9776;</label>
+      </div>
+      <div class="main-content">
+        <h1 class="MainContAnimation" id="MainContAnimation"></h1>
+        <div class="MainSideText">
+          <p class="MainSideTextPara">
+            <span class="bolding">Minerva Genesis Fund</span>
+            is a multi-strategy fund providing key investors managed access to
+            global digital assets aiming to outperform traditional markets.
+          </p>
+          <br />
+          <p class="MainSideTextPara">
+            The Fund utilises proprietary indicators for swing trading, custom
+            algorithms for medium frequency scalping and access to early-stage
+            DeFi investments.
+          </p>
+        </div>
+      </div>
+      <footer class="mainFooter">
+        DISCLAIMER <br />
+        ©Minerva Capital Management Pty Ltd 2024 All rights reserved.
+      </footer>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"
+      integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      var animation = bodymovin.loadAnimation({
+        container: document.getElementById("MainContAnimation"),
+        renderer: "svg",
+        loop: true,
+        autoplay: true,
+        path: "./json/MainContAnimation.json",
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
