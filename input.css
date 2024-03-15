@@ -10,8 +10,15 @@
   /* @apply w-1/3  how to write 50% height in tailwind  */
   @apply flex;
 }
+
 body {
   @apply bg-[#1a1a1a] text-white;
+}
+.main-content-2 {
+  @apply bg-[url('img/comma.png')] bg-contain bg-center bg-no-repeat;
+}
+.myForm {
+  @apply flex flex-col align-middle justify-center w-[50vw] h-[100vh] m-auto;
 }
 label[for="burger-menu"] {
   @apply hidden;
@@ -38,12 +45,21 @@ label[for="burger-menu"] {
 .main-content {
   @apply flex justify-center items-center h-[80vh] w-4/5 m-auto;
 }
-.mainFooter {
-  @apply text-center text-xs;
+#buttonMy { 
+  @apply bg-[#ff4d00] text-white p-2 rounded-md;
+
+}
+.main-content-3 { 
+  @apply flex justify-center items-center h-[80vh] w-4/5 m-auto;
 }
 .grid-container {
-  @apply overflow-visible;
+  @apply overflow-visible h-[120vh] relative;
 }
+
+.mainFooter {
+  @apply text-center text-xs mt-8 mb-4 absolute bottom-0 w-full;
+}
+
 MainSideText {
   @apply w-1/5;
 }
@@ -55,6 +71,19 @@ MainSideText {
 }
 #MainContAnimation {
   @apply w-[145%];
+}
+#mainStrategyAnimation { 
+  @apply w-[80%] h-[40%] relative ;
+
+}
+.headingPara { 
+  @apply font-bold text-[1.3em]  m-2 ;
+}
+.commaImg {
+  @apply bg-cover w-1/2 m-auto bg-[img/comma.png];
+}
+.hidden { 
+  display : none;
 }
 /* create media query for desktop screen of 1200px */
 @media (max-width: 1200px) {
@@ -68,6 +97,13 @@ MainSideText {
     @apply w-3/12;
   }
 }
+.commaImg {
+  @apply w-1/2 m-auto;
+}
+form > div {
+  margin-bottom: 0.2em;
+}
+
 /* write me media query which should work between 1200 and 960 */
 @media (max-width: 960px) {
   .webImage {
@@ -124,6 +160,15 @@ MainSideText {
   }
 }
 @media (max-width: 480px) {
+  .checkBoxCustom {
+    @apply rounded-full appearance-none w-6 h-4 bg-gray-800 border-2 border-gray-600 checked:bg-blue-500 checked:border-blue-500;
+  }
+  .myForm {
+    @apply flex flex-col align-middle justify-center w-[80vw] h-[100vh] m-auto;
+  }
+  .mainFooter {
+    @apply text-center text-xs mt-8;
+  }
   .webImage {
     @apply flex items-center;
   }
@@ -159,4 +204,54 @@ MainSideText {
     /* width: 2em; */
     /* height: 2em; */
   }
+}
+
+        
+
+.button {
+  display:inline-block;
+  height:60px;
+  line-height:60px;
+  overflow:hidden;
+  position:relative;
+  text-align:center;
+  background-color:transparent;
+  color:white;
+  border-radius:2px;
+  transition:0.3s;
+}
+
+.button:hover {background:#901522;}
+
+/* BUTTON UP */
+.label-up {
+  display:block;
+  margin:0px 30px;
+  height:100%;
+  position:relative;
+  top:0%;
+  transition:0.3s;
+}
+.headingPara { 
+  @apply text-center; 
+}
+.threeParaText { 
+@apply text-center;
+}
+.button:hover .label-up {
+  top:-100%;
+}
+
+/* BUTTON DOWN */
+.label-down {
+  display:block;
+  margin:0px 30px;
+  height:100%;
+  position:relative;
+  top:-100%;
+  transition:0.3s;
+}
+
+.button:hover .label-down {
+  top:0%;
 }
