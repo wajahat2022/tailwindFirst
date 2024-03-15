@@ -23,33 +23,190 @@
         <label class="burget-menu" for="burger-menu">&#9776;</label>
         <ul class="nav-lists">
           <!-- Your navigation list items -->
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="services.html">Services</a></li>
+          <li id="Home" ><a href="index.html">Home</a></li>
+          <li id="Strategy"><a href="#">STRATEGY</a></li>
+          <li id="Contact"><a href="#">CONTACT</a></li>
+          <li><a href="#">TEAM</a></li>
+          <!-- <li id="Contact"><a href="#">CONTACT</a></li> -->
         </ul>
       </div>
-      <div class="main-content">
-        <h1 class="MainContAnimation" id="MainContAnimation"></h1>
-        <div class="MainSideText">
-          <p class="MainSideTextPara">
-            <span class="bolding">Minerva Genesis Fund</span>
-            is a multi-strategy fund providing key investors managed access to
-            global digital assets aiming to outperform traditional markets.
+      <div class="togglingRequired">
+        <div id="HomeContainer" style="display: none;" class="main-content">
+          <h1 class="MainContAnimation" id="MainContAnimation"></h1>
+          <div class="MainSideText">
+            <p class="MainSideTextPara">
+              <span class="bolding">Minerva Genesis Fund</span>
+              is a multi-strategy fund providing key investors managed access to
+              global digital assets aiming to outperform traditional markets.
+            </p>
+            <br />
+            <p class="MainSideTextPara">
+              The Fund utilises proprietary indicators for swing trading, custom
+              algorithms for medium frequency scalping and access to early-stage
+              DeFi investments.
+            </p>
+          </div>
+        </div>
+        <div id="ContactContnainer" style="display: none; background-image: url('img/comma.png')"
+          class="main-content-2">
+          <div class="formPageParent">
+            <h1 class="text-4xl text-center">GET IN TOUCH</h1>
+            <form class="myForm" action="">
+              <div class="w-full mb-4 rounded-lg">
+                <!-- Full width for the third input field -->
+                <h1 class="font-bold text-center">FILL IN YOUR DETAILS BELOW</h1>
+              </div>
+              <div class="flex mb-4">
+                <!-- Container for first two input fields -->
+                <div class="w-1/2 mr-2 border border-white border-1 rounded-lg">
+                  <!-- Half width for each input field -->
+                  <input
+                    type="text"
+                    placeholder="First Name"
+                    class="bg-[#1A1A1A] w-full px-4 py-2 rounded-lg text-lg placeholder-gray-500"
+                  />
+                </div>
+                <div class="w-1/2 border border-white border-1 rounded-lg">
+                  <!-- Half width for each input field -->
+                  <input
+                    type="text"
+                    placeholder="Last Name"
+                    class="bg-[#1A1A1A] w-full px-4 py-2 rounded-lg text-lg placeholder-gray-500"
+                  />
+                </div>
+              </div>
+              <div class="w-full mb-4 border border-white border-1 rounded-lg">
+                <!-- Full width for the third input field -->
+                <input
+                  type="text"
+                  placeholder="Email Address"
+                  class="bg-[#1A1A1A] w-full px-4 py-2 rounded-lg text-lg placeholder-gray-500"
+                />
+              </div>
+              <div class="w-full border border-white border-1 rounded-lg">
+                <!-- Full width for the fourth input field -->
+                <input
+                  type="text"
+                  placeholder="Message"
+                  class="bg-[#1A1A1A] w-full px-4 py-2 rounded-lg text-lg placeholder-gray-500"
+                />
+              </div>
+              <div class="flex mb-4">
+                <!-- Container for first two input fields -->
+                <div
+                  class="w-1/2 rounded-lg flex items-center justify-start mt-4"
+                >
+                  <!-- Half width for each input field -->
+  
+                  <input
+                    type="checkbox"
+                    class="rounded-full appearance-none w-6 h-6 bg-gray-800 border-2 border-gray-600 checked:bg-[#901522] checked:border-[#901522] checkBoxCustom"
+                  />
+                  <p>Sign up to our Newsletter</p>
+                </div>
+                <div
+                  class="w-1/2 rounded-lg flex align-middle justify-start mt-4 items-center"
+                >
+                  <!-- Half width for each input field -->
+                  <input
+                    type="checkbox"
+                    class="rounded-full appearance-none w-6 h-6 bg-gray-800 border-2 border-gray-600 checked:bg-[#901522] checked:border-[#901522] checkBoxCustom"
+                  />
+                  <p>Sign up to our Newsletter</p>
+                </div>
+              </div>
+              <div class="w-full mb-4">
+                <!-- Full width for the fourth input field -->
+                <button class="bg-[#901522] w-full mb-4 mt-4 text-[2rem]">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      <div id="StrategyContainer" style="display: none;" class="main-content-3 flex flex-col ">
+        <h1 class="text-6xl mb-16 h-[20vh]">Strategy</h1>
+        <div class="threePara flex w-[80%] h-[20%] ml-[15.5rem]">
+  
+         <div class="innerParaParent">
+          <h1 class="headingPara">DIVERSIFIED STRATEGY FUNDS</h1>
+          <p class="threeParaText">
+            Swing trading using proprietary indicators
+            Short time frame, medium  frequency  <br> altcoin scraping
+            On-chain automation Early stage DeFi investments
           </p>
-          <br />
-          <p class="MainSideTextPara">
-            The Fund utilises proprietary indicators for swing trading, custom
-            algorithms for medium frequency scalping and access to early-stage
-            DeFi investments.
+         </div>
+         <div class="innerParaParent ">
+          <h1 class = 'headingPara '>HIGHLY SPECIALIZED TECHNICAL COMPONENTS</h1>
+          <p class="threeParaText">
+           
+  Proprietary indicators
+  Custom monitoring and algorithms
+  Purpose built interoperability
           </p>
+         </div>
+         <div class="innerParaParent">
+          <h1 class = 'headingPara'>Portfolio Balancing</h1>
+          <p class="threeParaText">
+            Careful sizing based on volatility & momentum
+  Advanced directional filtering
+  Actively managed and traded
+          </p>
+         </div>
+        </div> 
+        
+        <div  id="mainStrategyAnimation" class="  ">
+  
+        </div>
+        <div>
+          <h1 class="font-bold" >MINERVA GENESIS FUND RETURNS</h1>
+        <p class="text-center">Last Updated ....</p>
+        </div>
+        <div class="bottomBtns w-[100%] text-center flex justify-center mt-8">
+          <style>
+            #style::after { 
+    content: '30%';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      
+            }
+          </style>
+          <!-- <button id="first" class="ml-4 border-2 border-white px-4 py-2 text-white font-bold rounded-md hover:py-8">Since Inception</button>
+    
+          <button class="ml-4 border-2 border-white px-4 py-2 text-white font-bold rounded-md ">Six Months</button>
+          <button  class="ml-4 border-2 border-white px-4 py-2 text-white font-bold rounded-md">Three Months</button>
+          <button  class="ml-4 border-2 border-white px-4 py-2 text-white font-bold rounded-md">One Month</button> -->
+         
+    
+      <div class="button">
+        <span class="label-up">Since Inception</span>
+        <span class="label-up text-3xl">90%</span>
+    </div>
+      <div class="button">
+        <span class="label-up">Six Months</span>
+        <span class="label-up text-3xl">23%</span>
+    </div>
+      <div class="button">
+        <span class="label-up">Three Months</span>
+        <span class="label-up text-3xl">15%</span>
+    </div>
+    <div class="button">
+      <span class="label-up">One Month</span>
+      <span class="label-up text-3xl">5%</span>
+    </div>
         </div>
       </div>
-      <footer class="mainFooter">
-        DISCLAIMER <br />
-        ©Minerva Capital Management Pty Ltd 2024 All rights reserved.
-      </footer>
-    </div>
+      </div>
+  
+  </div>
+  
+  <footer class="mainFooter text-center">
+    DISCLAIMER <br />
+    ©Minerva Capital Management Pty Ltd 2024 All rights reserved.
+  </footer>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"
       integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg=="
@@ -63,6 +220,15 @@
         loop: true,
         autoplay: true,
         path: "./json/MainContAnimation.json",
+      });
+    </script>
+    <script>
+      var animation = bodymovin.loadAnimation({
+        container: document.getElementById("mainStrategyAnimation"),
+        renderer: "svg",
+        loop: true,
+        autoplay: true,
+        path: "./json/Strategy-Lines-Desktop.json",
       });
     </script>
     <script src="script.js"></script>
