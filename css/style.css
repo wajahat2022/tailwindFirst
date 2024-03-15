@@ -578,12 +578,200 @@ video {
   }
 }
 
-.block {
-  display: block;
+.absolute {
+  position: absolute;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.ml-4 {
+  margin-left: 1rem;
+}
+
+.ml-\[15\.5rem\] {
+  margin-left: 15.5rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .flex {
   display: flex;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-\[20\%\] {
+  height: 20%;
+}
+
+.h-\[20vh\] {
+  height: 20vh;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-\[100\%\] {
+  width: 100%;
+}
+
+.w-\[80\%\] {
+  width: 80%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.appearance-none {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-gray-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(75 85 99 / var(--tw-border-opacity));
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.bg-\[\#1A1A1A\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(26 26 26 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#901522\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(144 21 34 / var(--tw-bg-opacity));
+}
+
+.bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.align-middle {
+  vertical-align: middle;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-\[2rem\] {
+  font-size: 2rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.placeholder-gray-500::-moz-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-gray-500::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-placeholder-opacity));
 }
 
 /*
@@ -604,8 +792,25 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.main-content-2 {
+  background-image: url('img/comma.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.myForm {
+  margin: auto;
+  display: flex;
+  height: 100vh;
+  width: 50vw;
+  flex-direction: column;
+  justify-content: center;
+  vertical-align: middle;
+}
+
 label[for="burger-menu"] {
-  display: none;
+  display : none;
   /* width: 2em; */
   /* height: 2em; */
 }
@@ -652,14 +857,39 @@ label[for="burger-menu"] {
   justify-content: center;
 }
 
-.mainFooter {
-  text-align: center;
-  font-size: 0.75rem;
-  line-height: 1rem;
+#buttonMy {
+  border-radius: 0.375rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 77 0 / var(--tw-bg-opacity));
+  padding: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.main-content-3 {
+  margin: auto;
+  display: flex;
+  height: 80vh;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
 }
 
 .grid-container {
+  position: relative;
+  height: 120vh;
   overflow: visible;
+}
+
+.mainFooter {
+  position: absolute;
+  bottom: 0px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  text-align: center;
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 MainSideText {
@@ -678,6 +908,29 @@ MainSideText {
   width: 145%;
 }
 
+#mainStrategyAnimation {
+  position: relative;
+  height: 40%;
+  width: 80%;
+}
+
+.headingPara {
+  margin: 0.5rem;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+.commaImg {
+  margin: auto;
+  width: 50%;
+  background-color: img/comma.png;
+  background-size: cover;
+}
+
+.hidden {
+  display : none;
+}
+
 /* create media query for desktop screen of 1200px */
 
 @media (max-width: 1200px) {
@@ -693,6 +946,15 @@ MainSideText {
   .second {
     width: 25%;
   }
+}
+
+.commaImg {
+  margin: auto;
+  width: 50%;
+}
+
+form > div {
+  margin-bottom: 0.2em;
 }
 
 /* write me media query which should work between 1200 and 960 */
@@ -753,7 +1015,7 @@ MainSideText {
   /* Hide the navigation list by default */
 
   .nav-lists {
-    display: none;
+    display : none;
   }
 
   /* Show the navigation list when the burger menu is clicked */
@@ -769,6 +1031,44 @@ MainSideText {
 }
 
 @media (max-width: 480px) {
+  .checkBoxCustom {
+    height: 1rem;
+    width: 1.5rem;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    border-radius: 9999px;
+    border-width: 2px;
+    --tw-border-opacity: 1;
+    border-color: rgb(75 85 99 / var(--tw-border-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+  }
+
+  .checkBoxCustom:checked {
+    --tw-border-opacity: 1;
+    border-color: rgb(59 130 246 / var(--tw-border-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+  }
+
+  .myForm {
+    margin: auto;
+    display: flex;
+    height: 100vh;
+    width: 80vw;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+  }
+
+  .mainFooter {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
   .webImage {
     display: flex;
     align-items: center;
@@ -801,7 +1101,7 @@ MainSideText {
   /* Hide the navigation list by default */
 
   .nav-lists {
-    display: none;
+    display : none;
   }
 
   /* Show the navigation list when the burger menu is clicked */
@@ -816,3 +1116,72 @@ MainSideText {
   }
 }
 
+.button {
+  display:inline-block;
+  height:60px;
+  line-height:60px;
+  overflow:hidden;
+  position:relative;
+  text-align:center;
+  background-color:transparent;
+  color:white;
+  border-radius:2px;
+  transition:0.3s;
+}
+
+.button:hover {
+  background:#901522;
+}
+
+/* BUTTON UP */
+
+.label-up {
+  display:block;
+  margin:0px 30px;
+  height:100%;
+  position:relative;
+  top:0%;
+  transition:0.3s;
+}
+
+.headingPara {
+  text-align: center;
+}
+
+.threeParaText {
+  text-align: center;
+}
+
+.button:hover .label-up {
+  top:-100%;
+}
+
+/* BUTTON DOWN */
+
+.label-down {
+  display:block;
+  margin:0px 30px;
+  height:100%;
+  position:relative;
+  top:-100%;
+  transition:0.3s;
+}
+
+.button:hover .label-down {
+  top:0%;
+}
+
+.checked\:border-\[\#901522\]:checked {
+  --tw-border-opacity: 1;
+  border-color: rgb(144 21 34 / var(--tw-border-opacity));
+}
+
+.checked\:bg-\[\#901522\]:checked {
+  --tw-bg-opacity: 1;
+  background-color: rgb(144 21 34 / var(--tw-bg-opacity));
+}
+
+.hover\:py-8:hover {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
