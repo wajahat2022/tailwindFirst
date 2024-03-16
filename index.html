@@ -5,33 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
   </head>
   <body class="grid-container">
-    <div class="main">
-      <div class="nav">
-        <div class="webImage">
-          <img class="first" src="img/vector@2x.png" alt="" />
-          <img class="second" src="img/group@2x.png" alt="" />
-        </div>
-        <!-- <ul class="nav-lists">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="services.html">Services</a></li>
-        </ul> -->
-        <!-- <input type="checkbox" class="burger-menu" id="burger-menu"> -->
-        <label class="burget-menu" for="burger-menu">&#9776;</label>
-        <ul class="nav-lists">
-          <!-- Your navigation list items -->
-          <li id="Home" ><a href="index.html">Home</a></li>
-          <li id="Strategy"><a href="#">STRATEGY</a></li>
-          <li id="Contact"><a href="#">CONTACT</a></li>
-          <li><a href="#">TEAM</a></li>
-          <!-- <li id="Contact"><a href="#">CONTACT</a></li> -->
-        </ul>
+    <div class="nav">
+      <div class="webImage">
+        <img class="first" src="img/vector@2x.png" alt="" />
+        <img class="second" src="img/group@2x.png" alt="" />
       </div>
+
+      <label class="burget-menu" for="burger-menu">&#9776;</label>
+      <ul class="nav-lists">
+        <!-- Your navigation list items -->
+        <li class="hover:text-[#901522]" id="Home" ><a href="index.html">Home</a></li>
+        <li id="Strategy"><a href="#">STRATEGY</a></li>
+        <li id="Contact"><a href="#">CONTACT</a></li>
+        <li id="Team"><a href="#">TEAM</a></li>
+        <!-- <li id="Contact"><a href="#">CONTACT</a></li> -->
+      </ul>
+    </div>
+    <div class="nav-mobile  hidden">
+<ul style="width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center;" class="nav-lists-mobile">
+  <ul style="" class="nav-lists-mobile nav-lists-mobile-Updated">
+    <!-- Your navigation list items -->
+    <li swtich_attrib="Home" class = 'text-3xl p-4 borer border-b-2 border-white   Home' id="Home" ><a href="index.html">Home</a></li>
+    <li swtich_attrib="Strategy" class = 'text-3xl p-4  borer border-b-2 border-white  Strategy' id="Strategy"><a href="#">STRATEGY</a></li>
+    <li swtich_attrib="Contact" class = 'text-3xl p-4  borer border-b-2 border-white Contact' id="Contact"><a href="#">CONTACT</a></li>
+    <li swtich_attrib="Team" class = 'text-3xl p-4  borer border-b-2 border-white Team' id="Team"><a href="#">TEAM</a></li>
+    <!-- <li id="Contact"><a href="#">CONTACT</a></li> -->
+  </ul>
+</ul>
+    </div>
+    <div class="main ">
       <div class="togglingRequired">
-        <div id="HomeContainer" style="display: none;" class="main-content">
+        <div swtich_attrib="HomeContainer"  id="HomeContainer" style="display:  ;" class="main-content HomeContainer">
           <h1 class="MainContAnimation" id="MainContAnimation"></h1>
           <div class="MainSideText">
             <p class="MainSideTextPara">
@@ -47,8 +57,8 @@
             </p>
           </div>
         </div>
-        <div id="ContactContnainer" style="display: none; background-image: url('img/comma.png')"
-          class="main-content-2">
+        <div swtich_attrib="ContactContainer" id="ContactContainer" style="display: none; background-image: url('img/comma.png')"
+          class="main-content-2 ContactContainer">
           <div class="formPageParent">
             <h1 class="text-4xl text-center">GET IN TOUCH</h1>
             <form class="myForm" action="">
@@ -124,9 +134,10 @@
             </form>
           </div>
         </div>
-      <div id="StrategyContainer" style="display: none;" class="main-content-3 flex flex-col ">
+    
+      <div swtich_attrib="StrategyContainer"  id="StrategyContainer" style="display: none;" class="main-content-3 flex flex-col StrategyContainer">
         <h1 class="text-6xl mb-16 h-[20vh]">Strategy</h1>
-        <div class="threePara flex w-[80%] h-[20%] ml-[15.5rem]">
+        <div class="mobThreePara threePara flex w-[80%] h-[20%] ">
   
          <div class="innerParaParent">
           <h1 class="headingPara">DIVERSIFIED STRATEGY FUNDS</h1>
@@ -153,60 +164,224 @@
   Actively managed and traded
           </p>
          </div>
+         <div class="notrequiredHidingMob addtional">
+          <div style="text-align: center;">
+            <h1 class="font-bold" >MINERVA GENESIS FUND RETURNS</h1>
+          <p class="text-center">Last Updated ....</p>
+          </div>
+          <div class="bottomBtns w-[100%] text-center flex justify-center mt-8">
+            <style>
+              #style::after { 
+      content: '30%';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        
+              }
+            </style>
+            <!-- <button id="first" class="ml-4 border-2 border-white px-4 py-2 text-white font-bold rounded-md hover:py-8">Since Inception</button>
+      
+            <button class="ml-4 border-2 border-white px-4 py-2 text-white font-bold rounded-md ">Six Months</button>
+            <button  class="ml-4 border-2 border-white px-4 py-2 text-white font-bold rounded-md">Three Months</button>
+            <button  class="ml-4 border-2 border-white px-4 py-2 text-white font-bold rounded-md">One Month</button> -->
+           
+      
+        <div class="button">
+          <span class="label-up">Since Inception</span>
+          <span class="label-up text-3xl">90%</span>
+      </div>
+        <div class="button">
+          <span class="label-up">Six Months</span>
+          <span class="label-up text-3xl">23%</span>
+      </div>
+        <div class="button">
+          <span class="label-up">Three Months</span>
+          <span class="label-up text-3xl">15%</span>
+      </div>
+      <div class="button">
+        <span class="label-up">One Month</span>
+        <span class="label-up text-3xl">5%</span>
+      </div>
+          </div>
+         </div>
         </div> 
         
         <div  id="mainStrategyAnimation" class="  ">
   
         </div>
-        <div>
-          <h1 class="font-bold" >MINERVA GENESIS FUND RETURNS</h1>
-        <p class="text-center">Last Updated ....</p>
-        </div>
-        <div class="bottomBtns w-[100%] text-center flex justify-center mt-8">
-          <style>
-            #style::after { 
-    content: '30%';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+        <div class="requiredHidingMob">
+          <div style="text-align: center;">
+            <h1 class="font-bold" >MINERVA GENESIS FUND RETURNS</h1>
+          <p class="text-center">Last Updated ....</p>
+          </div>
+          <div class="bottomBtns w-[100%] text-center flex justify-center mt-8">
+            <style>
+              #style::after { 
+      content: '30%';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        
+              }
+            </style>
+            <!-- <button id="first" class="ml-4 border-2 border-white px-4 py-2 text-white font-bold rounded-md hover:py-8">Since Inception</button>
       
-            }
-          </style>
-          <!-- <button id="first" class="ml-4 border-2 border-white px-4 py-2 text-white font-bold rounded-md hover:py-8">Since Inception</button>
-    
-          <button class="ml-4 border-2 border-white px-4 py-2 text-white font-bold rounded-md ">Six Months</button>
-          <button  class="ml-4 border-2 border-white px-4 py-2 text-white font-bold rounded-md">Three Months</button>
-          <button  class="ml-4 border-2 border-white px-4 py-2 text-white font-bold rounded-md">One Month</button> -->
-         
-    
+            <button class="ml-4 border-2 border-white px-4 py-2 text-white font-bold rounded-md ">Six Months</button>
+            <button  class="ml-4 border-2 border-white px-4 py-2 text-white font-bold rounded-md">Three Months</button>
+            <button  class="ml-4 border-2 border-white px-4 py-2 text-white font-bold rounded-md">One Month</button> -->
+           
+      
+        <div class="button">
+          <span class="label-up">Since Inception</span>
+          <span class="label-up text-3xl">90%</span>
+      </div>
+        <div class="button">
+          <span class="label-up">Six Months</span>
+          <span class="label-up text-3xl">23%</span>
+      </div>
+        <div class="button">
+          <span class="label-up">Three Months</span>
+          <span class="label-up text-3xl">15%</span>
+      </div>
       <div class="button">
-        <span class="label-up">Since Inception</span>
-        <span class="label-up text-3xl">90%</span>
-    </div>
-      <div class="button">
-        <span class="label-up">Six Months</span>
-        <span class="label-up text-3xl">23%</span>
-    </div>
-      <div class="button">
-        <span class="label-up">Three Months</span>
-        <span class="label-up text-3xl">15%</span>
-    </div>
-    <div class="button">
-      <span class="label-up">One Month</span>
-      <span class="label-up text-3xl">5%</span>
-    </div>
+        <span class="label-up">One Month</span>
+        <span class="label-up text-3xl">5%</span>
+      </div>
+          </div>
+         </div>
+      </div>
+      <div swtich_attrib="TeamContainer" id="TeamContainer" style="display: none; "class="main-content-2 TeamContainer">
+        <h1 class="text-6xl mb-16 h-[20vh] text-center">Team</h1>
+        <div class="threePara flex w-[100%] h-[20%] ">
+       <!-- our swiper section  -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"> 
+              <div class="parent"> 
+              <div style="display: flex ; align-items: center; justify-content: center;" class="innerParent">
+                <img style = "margin-right: 1em;" src="img/hotair1373167.jpg" alt=""> 
+                <div  class="designation"><h1 style = " ; ">COE of Company   </h1><p style="color : #901522;">Found & CEO</p></div>
+              </div> 
+              <div style="width: 100%; margin: auto auto; padding: 3rem;" class="mainDescription">
+                Brendan brings a rich background in management of high growth SaaS companies to Minerva as its founder and CEO/CIO. Over his 8-year career, he successfully raised over $50 million in debt and equity, navigating the complex landscape of business finance and cultivating sustainable growth.
+
+                Brendan has also spent over five years immersing himself in various crypto projects, accumulating experience investing within this space. Now, steering Minerva, he leverages this deep-seated understanding to foster a culture of innovation and result-oriented strategies, working towards creating a robust team and platform for crypto investments.
+              </div>
+            </div>
+          </div>
+            <div class="swiper-slide"> 
+              <div class="parent"> 
+              <div style="display: flex ; align-items: center; justify-content: center;" class="innerParent">
+                <img style = "margin-right: 1em;" src="img/hotair1373167.jpg" alt=""> 
+                <div  class="designation"><h1 style = " ; ">COE of Company   </h1><p style="color : #901522;">Found & CEO</p></div>
+              </div> 
+              <div style="width: 80%; margin: auto auto; padding: 3rem;" class="mainDescription">
+                Brendan brings a rich background in management of high growth SaaS companies to Minerva as its founder and CEO/CIO. Over his 8-year career, he successfully raised over $50 million in debt and equity, navigating the complex landscape of business finance and cultivating sustainable growth.
+
+                Brendan has also spent over five years immersing himself in various crypto projects, accumulating experience investing within this space. Now, steering Minerva, he leverages this deep-seated understanding to foster a culture of innovation and result-oriented strategies, working towards creating a robust team and platform for crypto investments.
+              </div>
+            </div>
+          </div>
+            <div class="swiper-slide"> 
+              <div class="parent"> 
+              <div style="display: flex ; align-items: center; justify-content: center;" class="innerParent">
+                <img style = "margin-right: 1em;" src="img/hotair1373167.jpg" alt=""> 
+                <div  class="designation"><h1 style = " ; ">COE of Company   </h1><p style="color : #901522;">Found & CEO</p></div>
+              </div> 
+              <div style="width: 80%; margin: auto auto; padding: 3rem;" class="mainDescription">
+                Brendan brings a rich background in management of high growth SaaS companies to Minerva as its founder and CEO/CIO. Over his 8-year career, he successfully raised over $50 million in debt and equity, navigating the complex landscape of business finance and cultivating sustainable growth.
+
+                Brendan has also spent over five years immersing himself in various crypto projects, accumulating experience investing within this space. Now, steering Minerva, he leverages this deep-seated understanding to foster a culture of innovation and result-oriented strategies, working towards creating a robust team and platform for crypto investments.
+              </div>
+            </div>
+          </div>
+            <div class="swiper-slide"> 
+              <div class="parent"> 
+              <div style="display: flex ; align-items: center; justify-content: center;" class="innerParent">
+                <img style = "margin-right: 1em;" src="img/hotair1373167.jpg" alt=""> 
+                <div  class="designation"><h1 style = " ; ">COE of Company   </h1><p style="color : #901522;">Found & CEO</p></div>
+              </div> 
+              <div style="width: 80%; margin: auto auto; padding: 3rem;" class="mainDescription">
+                Brendan brings a rich background in management of high growth SaaS companies to Minerva as its founder and CEO/CIO. Over his 8-year career, he successfully raised over $50 million in debt and equity, navigating the complex landscape of business finance and cultivating sustainable growth.
+
+                Brendan has also spent over five years immersing himself in various crypto projects, accumulating experience investing within this space. Now, steering Minerva, he leverages this deep-seated understanding to foster a culture of innovation and result-oriented strategies, working towards creating a robust team and platform for crypto investments.
+              </div>
+            </div>
+          </div>
+            <div class="swiper-slide"> 
+              <div class="parent"> 
+              <div style="display: flex ; align-items: center; justify-content: center;" class="innerParent">
+                <img style = "margin-right: 1em;" src="img/hotair1373167.jpg" alt=""> 
+                <div  class="designation"><h1 style = " ; ">COE of Company   </h1><p style="color : #901522;">Found & CEO</p></div>
+              </div> 
+              <div style="width: 80%; margin: auto auto; padding: 3rem;" class="mainDescription">
+                Brendan brings a rich background in management of high growth SaaS companies to Minerva as its founder and CEO/CIO. Over his 8-year career, he successfully raised over $50 million in debt and equity, navigating the complex landscape of business finance and cultivating sustainable growth.
+
+                Brendan has also spent over five years immersing himself in various crypto projects, accumulating experience investing within this space. Now, steering Minerva, he leverages this deep-seated understanding to foster a culture of innovation and result-oriented strategies, working towards creating a robust team and platform for crypto investments.
+              </div>
+            </div>
+          </div>
+            <div class="swiper-slide"> 
+              <div class="parent"> 
+              <div style="display: flex ; align-items: center; justify-content: center;" class="innerParent">
+                <img style = "margin-right: 1em;" src="img/hotair1373167.jpg" alt=""> 
+                <div  class="designation"><h1 style = " ; ">COE of Company   </h1><p style="color : #901522;">Found & CEO</p></div>
+              </div> 
+              <div style="width: 80%; margin: auto auto; padding: 3rem;" class="mainDescription">
+                Brendan brings a rich background in management of high growth SaaS companies to Minerva as its founder and CEO/CIO. Over his 8-year career, he successfully raised over $50 million in debt and equity, navigating the complex landscape of business finance and cultivating sustainable growth.
+
+                Brendan has also spent over five years immersing himself in various crypto projects, accumulating experience investing within this space. Now, steering Minerva, he leverages this deep-seated understanding to foster a culture of innovation and result-oriented strategies, working towards creating a robust team and platform for crypto investments.
+              </div>
+            </div>
+          </div>
+            <div class="swiper-slide"> 
+              <div class="parent"> 
+              <div style="display: flex ; align-items: center; justify-content: center;" class="innerParent">
+                <img style = "margin-right: 1em;" src="img/hotair1373167.jpg" alt=""> 
+                <div  class="designation"><h1 style = " ; ">COE of Company   </h1><p style="color : #901522;">Found & CEO</p></div>
+              </div> 
+              <div style="width: 80%; margin: auto auto; padding: 3rem;" class="mainDescription">
+                Brendan brings a rich background in management of high growth SaaS companies to Minerva as its founder and CEO/CIO. Over his 8-year career, he successfully raised over $50 million in debt and equity, navigating the complex landscape of business finance and cultivating sustainable growth.
+
+                Brendan has also spent over five years immersing himself in various crypto projects, accumulating experience investing within this space. Now, steering Minerva, he leverages this deep-seated understanding to foster a culture of innovation and result-oriented strategies, working towards creating a robust team and platform for crypto investments.
+              </div>
+            </div>
+          </div>
+            <div class="swiper-slide"> 
+              <div class="parent"> 
+              <div style="display: flex ; align-items: center; justify-content: center;" class="innerParent">
+                <img style = "margin-right: 1em;" src="img/hotair1373167.jpg" alt=""> 
+                <div  class="designation"><h1 style = " ; ">COE of Company   </h1><p style="color : #901522;">Found & CEO</p></div>
+              </div> 
+              <div style="width: 80%; margin: auto auto; padding: 3rem;" class="mainDescription">
+                Brendan brings a rich background in management of high growth SaaS companies to Minerva as its founder and CEO/CIO. Over his 8-year career, he successfully raised over $50 million in debt and equity, navigating the complex landscape of business finance and cultivating sustainable growth.
+
+                Brendan has also spent over five years immersing himself in various crypto projects, accumulating experience investing within this space. Now, steering Minerva, he leverages this deep-seated understanding to foster a culture of innovation and result-oriented strategies, working towards creating a robust team and platform for crypto investments.
+              </div>
+            </div>
+          </div>
+            <!-- <div class="swiper-slide"><img src="img/hotair1373167.jpg" alt=""> 2</div>
+            <div class="swiper-slide"><img src="img/hotair1373167.jpg" alt=""> 3</div>
+            <div class="swiper-slide"><img src="img/hotair1373167.jpg" alt=""> 4</div>
+            <div class="swiper-slide"><img src="img/hotair1373167.jpg" alt=""> 5</div>
+            <div class="swiper-slide"><img src="img/hotair1373167.jpg" alt=""> 6</div>
+            <div class="swiper-slide"><img src="img/hotair1373167.jpg" alt=""> 7</div>
+            <div class="swiper-slide"><img src="img/hotair1373167.jpg" alt=""> 8</div>
+            <div class="swiper-slide"><img src="img/hotair1373167.jpg" alt=""> 9</div> -->
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
       </div>
   
   </div>
   
-  <footer class="mainFooter text-center">
-    DISCLAIMER <br />
-    ©Minerva Capital Management Pty Ltd 2024 All rights reserved.
-  </footer>
+ 
+  </div>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"
       integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg=="
@@ -232,5 +407,41 @@
       });
     </script>
     <script src="script.js"></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          renderBullet: function (index, className) {
+            return '<span class="' + className + '" style="background-color: #901522;"></span>';
+          },
+        },
+        breakpoints: {
+          480: { 
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+        },
+      });
+    </script>
+<footer id="footer" style="" class="mainFooter text-center">
+  DISCLAIMER <br />
+  ©Minerva Capital Management Pty Ltd 2024 All rights reserved.
+</footer>  
+</body>
 </html>
