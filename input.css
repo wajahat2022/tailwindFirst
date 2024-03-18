@@ -10,8 +10,17 @@
   /* @apply w-1/3  how to write 50% height in tailwind  */
   @apply flex;
 }
-.notrequiredHidingMob { 
-display : none ; 
+.myWill {
+  display: none;
+}
+.customStrategyHeadingClass {
+  @apply text-6xl mb-16 h-[20vh];
+}
+.mainDescription {
+  font-size: 0.9rem;
+}
+.notrequiredHidingMob {
+  display: none;
 }
 body {
   @apply bg-[#1a1a1a] text-white;
@@ -20,7 +29,7 @@ body {
   @apply bg-[url('img/comma.png')] bg-contain bg-center bg-no-repeat;
 }
 .myForm {
-  @apply flex flex-col align-middle justify-center w-[50vw] h-[100vh] m-auto;
+  @apply flex flex-col align-middle justify-center w-[50vw] h-[76vh] m-auto;
 }
 label[for="burger-menu"] {
   @apply hidden;
@@ -47,15 +56,17 @@ label[for="burger-menu"] {
 .main-content {
   @apply flex justify-center items-center h-[80vh] w-4/5 m-auto;
 }
-#buttonMy { 
+#buttonMy {
   @apply bg-[#ff4d00] text-white p-2 rounded-md;
-
 }
-.main-content-3 { 
-  @apply flex justify-center items-center h-[80vh] w-4/5 m-auto;
+.main-content-3 {
+  @apply flex justify-center items-center h-[65vh] w-4/5 m-auto;
 }
 .grid-container {
-  @apply overflow-visible h-[120vh] relative;
+  @apply h-[120vh] relative;
+}
+.grid-container {
+  overflow: hidden;
 }
 
 .mainFooter {
@@ -74,22 +85,26 @@ MainSideText {
 #MainContAnimation {
   @apply w-[145%];
 }
-#mainStrategyAnimation { 
-  @apply w-[80%] h-[40%] relative ;
-
+#mainStrategyAnimation {
+  @apply w-[80%] h-[40%] relative;
 }
-.headingPara { 
-  @apply font-bold text-[1.3em]  m-2 ;
+.headingPara {
+  @apply font-bold text-[1.3em]  m-2;
 }
 .commaImg {
   @apply bg-cover w-1/2 m-auto bg-[img/comma.png];
 }
-.backgroundColoring { 
-  background-color: #A90D1D !important;
+.backgroundColoring {
+  background-color: #a90d1d !important;
 }
-.hidden { 
-  display : none;
+.hidden {
+  display: none;
 }
+#footer {
+  position: absolute;
+  bottom: 4rem;
+}
+
 /* create media query for desktop screen of 1200px */
 @media (max-width: 1200px) {
   .webImage {
@@ -102,7 +117,6 @@ MainSideText {
     @apply w-3/12;
   }
 }
-
 
 /* write me media query which should work between 1200 and 960 */
 @media (max-width: 960px) {
@@ -119,21 +133,21 @@ MainSideText {
     @apply text-[1em];
   }
 }
-/* now write me media query for mobile screens  */
+/* now write me media query for tablet screens  */
 @media (max-width: 768px) {
-  #mainStrategyAnimation  { 
+  #mainStrategyAnimation {
     display: none !important;
-   }
-   .requiredHidingMob { 
-    display : none;
-   }
-   .notrequiredHidingMob.addtional {
+  }
+  .requiredHidingMob {
+    display: none;
+  }
+  .notrequiredHidingMob.addtional {
     display: block;
   }
-    .mobThreePara { 
-      display: block !important; 
-    }
-  
+  .mobThreePara {
+    display: block !important;
+  }
+
   .webImage {
     @apply flex items-center;
   }
@@ -173,21 +187,31 @@ MainSideText {
   }
 }
 @media (max-width: 480px) {
-
- #mainStrategyAnimation  { 
-  display: none !important;
- }
- .requiredHidingMob { 
-  display : none;
- }
- .notrequiredHidingMob.addtional {
-  display: block;
-}
-  .mobThreePara { 
-    display: block !important; 
+  #StrategyContainer > h1 {
+    margin-bottom: 1rem;
+  }
+  #StrategyContainer {
+    height: auto !important;
   }
 
-  .innerParaParent { 
+  .grid-container {
+    height: 120vh !important;
+    overflow: visible;
+  }
+  #mainStrategyAnimation {
+    display: none !important;
+  }
+  .requiredHidingMob {
+    display: none;
+  }
+  .notrequiredHidingMob.addtional {
+    display: block;
+  }
+  .mobThreePara {
+    display: block !important;
+  }
+
+  .innerParaParent {
     margin-bottom: 5em !important;
   }
   .checkBoxCustom {
@@ -234,9 +258,30 @@ MainSideText {
     /* width: 2em; */
     /* height: 2em; */
   }
+  .grid-container {
+    position: relative;
+  }
+  #footer {
+    position: absolute;
+    bottom: 0;
+  }
+  .customStrategyHeadingClass {
+    @apply text-6xl mb-16 h-auto;
+  }
+  .bottomBtns {
+    @apply block !important;
+  }
+  .button {
+    @apply w-[100%];
+  }
+  .myWill {
+    display: "block";
+  }
+  #footer {
+    position: static;
+  }
 }
 
-        
 .commaImg {
   @apply w-1/2 m-auto;
 }
@@ -244,53 +289,54 @@ form > div {
   margin-bottom: 0.2em;
 }
 .button {
-  display:inline-block;
-  height:60px;
-  line-height:60px;
-  overflow:hidden;
-  position:relative;
-  text-align:center;
-  background-color:transparent;
-  color:white;
-  border-radius:2px;
-  transition:0.3s;
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  background-color: transparent;
+  color: white;
+  border-radius: 2px;
+  transition: 0.3s;
 }
 
-.button:hover {background:#901522;}
+.button:hover {
+  background: #901522;
+}
 
 /* BUTTON UP */
 .label-up {
-  display:block;
-  margin:0px 30px;
-  height:100%;
-  position:relative;
-  top:0%;
-  transition:0.3s;
+  display: block;
+  margin: 0px 30px;
+  height: 100%;
+  position: relative;
+  top: 0%;
+  transition: 0.3s;
 }
-.headingPara { 
-  @apply text-center; 
+.headingPara {
+  @apply text-center;
 }
-.threeParaText { 
-@apply text-center;
+.threeParaText {
+  @apply text-center;
 }
 .button:hover .label-up {
-  top:-100%;
+  top: -100%;
 }
 
 /* BUTTON DOWN */
 .label-down {
-  display:block;
-  margin:0px 30px;
-  height:100%;
-  position:relative;
-  top:-100%;
-  transition:0.3s;
+  display: block;
+  margin: 0px 30px;
+  height: 100%;
+  position: relative;
+  top: -100%;
+  transition: 0.3s;
 }
 
 .button:hover .label-down {
-  top:0%;
+  top: 0%;
 }
-
 
 /* our swiper  */
 .swiper {
@@ -301,7 +347,7 @@ form > div {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background-color: #1A1A1A;
+  background-color: #1a1a1a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -310,18 +356,15 @@ form > div {
 .swiper-slide img {
   display: block;
   width: 200px;
-  height: 200px;
+  height: 100px;
+  width: 100px;
   object-fit: cover;
   border-radius: 10000em;
 }
 .burget-menu.close::after {
-  content: '\2715'; /* Unicode character for cross symbol */
+  content: "\2715"; /* Unicode character for cross symbol */
   font-size: 24px; /* Adjust size as needed */
 }
-html { 
+html {
   position: relative;
-}
-#footer { 
-  position: absolute; 
-  bottom: 0;
 }
